@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ReverseCustomerName {
+
+    public static String reverseName(String name) {
+        StringBuilder reversedName = new StringBuilder(name);
+        return reversedName.reverse().toString();
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter customer name: ");
+        String name = sc.nextLine();
+
+        String reversedName = reverseName(name);
+
+        System.out.println("Reversed Customer Name: " + reversedName);
+
+        sc.close();
+    }
+}
